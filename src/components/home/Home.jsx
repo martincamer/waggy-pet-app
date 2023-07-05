@@ -6,7 +6,7 @@ import HomeIntroFour from './HomeIntroFour';
 import HomeIntroTree from './HomeIntroTree';
 import HomeIntroTwo from './HomeIntroTwo';
 import HomeIntroSeven from './HomeIntroSeven';
-import HomeIntroHeight from './homeIntroHeight';
+import HomeIntroHeight from './HomeIntroHeight';
 import HomeIntroNine from './HomeIntroNine';
 import HomeIntroSlider from './HomeIntroSlider';
 
