@@ -1,0 +1,228 @@
+@import '../../assets/scss/root.scss';
+
+.home_intro {
+	height: 100%;
+	padding: 50px 20px;
+	background-color: $six;
+
+	.home_content_intro {
+		@include container(1220px, 100%);
+		margin: 0 auto;
+
+		.grid {
+			display: grid;
+			grid-template-columns: repeat(2, 6fr);
+			gap: 5rem;
+			align-items: center;
+
+			img {
+				width: 90%;
+				height: 100%;
+
+				@media screen and (max-width: 768px) {
+					width: 100%;
+				}
+			}
+
+			@media screen and (max-width: 768px) {
+				grid-template-columns: repeat(1, 12fr);
+			}
+			.grid_column_two {
+				display: flex;
+				flex-direction: column;
+				gap: 3rem;
+				@media screen and (max-width: 768px) {
+					gap: 1.8rem;
+				}
+				p {
+					color: $primary;
+					text-transform: uppercase;
+					font-weight: 600;
+				}
+
+				h2 {
+					font-weight: 500;
+					font-size: clamp(30px, 4vw, 100px);
+					line-height: 6rem;
+					@media screen and (max-width: 768px) {
+						line-height: 3rem;
+						text-align: center;
+					}
+				}
+
+				.button {
+					display: flex;
+					align-items: center;
+					gap: 0.3rem;
+					padding: 10px;
+					border-radius: 5px;
+					border-color: $five;
+					border-style: solid;
+					border-width: 2px;
+					width: 10rem;
+					color: $primary;
+					a {
+						color: $primary;
+					}
+
+					&:hover {
+						transform: scale(1.03);
+						transition: all 300ms;
+					}
+				}
+			}
+		}
+	}
+}
+
+//two module
+
+.home_intro_two {
+	padding: 70px 20px;
+	margin: 0 auto;
+	@include container(1220px, 100%);
+
+	.home_content_intro_two {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		gap: 5rem;
+
+		.card_item_locks {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			flex-direction: column;
+			gap: 1rem;
+			img {
+				width: 100px;
+				max-width: 100%;
+			}
+			p {
+				text-align: center;
+				color: $terciary;
+				font-weight: 600;
+			}
+		}
+	}
+}
+
+//tree module
+
+.home_intro_tree {
+	padding: 20px 20px;
+	margin: 0 auto;
+	@include container(1220px, 100%);
+	display: flex;
+	flex-direction: column;
+	gap: 5rem;
+	.home_content_intro_tree {
+		display: flex;
+		flex-direction: column;
+		gap: 3rem;
+
+		.title_and_button {
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+
+			h2 {
+				font-size: 2.5rem;
+				font-weight: 600;
+			}
+
+			a {
+				background-color: $terciary;
+				padding: 20px;
+				border-radius: 10px;
+				color: $primary;
+				font-weight: 600;
+
+				&:hover {
+					box-shadow: 0 0 10px 0 #1114;
+					transition: all 300ms;
+					background-color: $primary;
+					color: $terciary;
+				}
+			}
+		}
+
+		.grid_item {
+			display: flex;
+			justify-content: space-around;
+			gap: 1rem;
+
+			.card_shop {
+				display: flex;
+				flex-direction: column;
+				justify-content: space-between;
+				gap: 1.8rem;
+				width: 100%;
+				padding: 10px;
+				.button_card {
+					background-color: $terciary;
+					padding: 15px;
+					border-radius: 10px;
+					width: 50%;
+					text-align: center;
+					a {
+						color: $primary;
+						font-size: 1.12rem;
+						font-weight: 600;
+					}
+				}
+			}
+
+			.bg_card_image {
+				background-color: $fourty;
+				box-shadow: 0 0 12px 0 #1118;
+				padding: 2rem;
+				border-radius: 1rem;
+				height: 100%;
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
+				div p {
+					width: 30%;
+					text-align: center;
+					color: $terciary;
+					border: solid 1px $terciary;
+					border-radius: 0.2rem;
+					padding: 0.6rem;
+				}
+				div img {
+					width: 200px;
+					height: 200px;
+					object-fit: cover;
+					object-position: center;
+				}
+			}
+
+			.card_content_desc {
+				display: flex;
+				flex-direction: column;
+				gap: 0.5rem;
+
+				p:nth-child(1) {
+					color: $terciary;
+					font-weight: 600;
+					font-size: 1.2rem;
+				}
+				p:nth-child(2) {
+					color: $primary;
+					font-weight: 400;
+					font-size: 1rem;
+				}
+				p:nth-child(3) {
+					color: $terciary;
+					font-weight: 400;
+					font-size: 1.5rem;
+					background-color: $primary;
+					padding: 1rem;
+					border-radius: 1rem;
+					width: 6rem;
+				}
+			}
+		}
+	}
+}

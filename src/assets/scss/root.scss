@@ -1,0 +1,15 @@
+//variables
+$primary: #dead6f;
+$secondary: #f9f3ec;
+$terciary: #41403e;
+$fourty: #eeebe5;
+$five: #908f8d;
+$six: #f9f3ec;
+
+//mixin
+@mixin container($width, $height) {
+	width: $width;
+	height: $height;
+	max-width: calc(100% - 20px);
+	max-height: 100%;
+}

@@ -1,0 +1,74 @@
+@import '../../assets/scss/root.scss';
+
+.product {
+	background-color: $fourty;
+	padding: 100px 20px;
+
+	.container {
+		display: flex;
+		align-items: center;
+		@include container(1220px, 50vh);
+		margin: 0 auto;
+	}
+
+	.card_product {
+		display: flex;
+		align-items: center;
+		gap: 6rem;
+	}
+
+	.card_product_col_one {
+		background-color: $six;
+		border-radius: 20px;
+		box-shadow: 0 0 12px 0 #1116;
+		img {
+			width: 350px;
+			height: 350px;
+		}
+	}
+
+	.card_product_col_two {
+		display: flex;
+		flex-direction: column;
+		gap: 1.6rem;
+
+		p:nth-child(1) {
+			color: $primary;
+			font-weight: 600;
+			font-size: 3rem;
+		}
+		p:nth-child(2) {
+			color: $terciary;
+			font-weight: 500;
+			font-size: 1.3rem;
+		}
+		p:nth-child(3) {
+			color: $terciary;
+			font-weight: 500;
+			font-size: 1.5rem;
+			background-color: $terciary;
+			color: $primary;
+			padding: 20px;
+			border-radius: 10rem;
+			width: 10rem;
+			text-align: center;
+		}
+		p:nth-child(4) {
+			font-weight: 600;
+			font-size: 1.9rem;
+			color: $terciary;
+		}
+
+		div {
+			margin-top: 20px;
+			a {
+				background-color: $terciary;
+				padding: 20px;
+				border-radius: 10px;
+				color: $primary;
+				font-weight: 500;
+				font-size: 1.4rem;
+			}
+		}
+	}
+}
